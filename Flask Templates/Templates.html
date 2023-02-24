@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<!-- A heading to describe the purpose of the page -->
+<h2>Using Templates</h2>
+
+<body>
+    {#
+    {% if result >= 5 %}  <!-- Using a Flask conditional statement to check if result is greater than or equal to 5 -->
+    <h3>You are a high level repository creator with total number of repositories equal to {{result}}</h3>
+    {% else %}  <!-- Using a Flask conditional statement to execute if result is less than 5 -->
+    <h3>You are a low level repository creator with total number of repositories equal to {{result}}</h3>
+    {% endif %}
+    #}
+    <table border=4>
+        {% for key, value in result.items() %}  <!-- Using a Flask loop to iterate through each key-value pair in the result dictionary -->
+        <tr>
+            <th>{{ key }}</th>  <!-- Displaying the key in a table header cell -->
+            <th>{{ value }}</th>  <!-- Displaying the value in a table data cell -->
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
+
