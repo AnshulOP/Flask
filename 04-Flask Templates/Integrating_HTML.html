@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <!-- A heading to describe the purpose of the form -->
+  <h2>Total Number of Repositories on Github for different skills</h2>
+
+  <!-- A form with input fields for different skills and a submit button to initiate the calculation -->
+  <!-- The 'action' attribute specifies the URL where the form data will be submitted when the user clicks the submit button -->
+  <!-- The 'method' attribute specifies the HTTP method used to send the form data to the server. In this case, it is 'post', which means the form data will be sent in the HTTP request body. -->
+  <form action="/calculate" method="post">
+    <label for="Java">Java :</label><br>
+    <!-- An input field for Java skill -->
+    <input type="text" id="java" name="java" value="0"><br><br>
+
+    <label for="Flask">Flask :</label><br>
+    <!-- An input field for Flask skill -->
+    <input type="text" id="flask" name="flask" value="0"><br><br>
+
+    <label for="Jupyter">Jupyter :</label><br>
+    <!-- An input field for Jupyter skill -->
+    <input type="text" id="Jupyter" name="jupyter" value="0"><br><br>
+
+    <label for="Python">Python :</label><br>
+    <!-- An input field for Python skill -->
+    <input type="text" id="python" name="python" value="0"><br><br>
+
+    <label for="MySQL">MySQL :</label><br>
+    <!-- An input field for MySQL skill -->
+    <input type="text" id="mysql" name="mysql" value="0"><br><br>
+    
+    <label for="Shell">Shell :</label><br>
+    <input type="text" id="shell" name="shell" value="0"><br><br>
+
+    <!-- A button to initiate the calculation -->
+    <input type="submit" value="Calculate">
+  </form>
+
+</body>
+
+</html>
