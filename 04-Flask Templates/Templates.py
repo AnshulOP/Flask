@@ -25,18 +25,18 @@ def repositories(number):
         result = "Low Level"
     # Create a dictionary with the repository information
     dictionary = {'Repositories': number, 'Level': result}
-    # Render the 'Templates.html' template with the dictionary as a parameter
+    # Render the 'Templates.html' template with the dictionary as a parameter.
     return render_template('Templates.html', result=dictionary)
 
 
-# Defining a route for the 'calculate' page with the ability to receive POST and GET requests
+# Defining a route for the 'calculate' page with the ability to receive POST and GET requests.
 @app.route('/calculate', methods=['POST', 'GET'])
 def calculate():
     # Initialize the total number of repositories to 0
     total_repositories = 0
     # If a POST request is received
     if request.method == 'POST':
-        # Retrieve the number of repositories for each programming language from the form data
+        # Retrieve the number of repositories for each programming language from the form data.
         java = int(request.form['java'])
         flask = int(request.form['flask'])
         jupyter = int(request.form['jupyter'])
@@ -52,7 +52,7 @@ def calculate():
     return redirect(url_for(result, number=total_repositories))
 
 
-# Running the app if it is the main module
+# Running the app if it is the main module.
 if __name__ == '__main__':
     # Starting the app in debug mode
     app.run(debug=True)
