@@ -1,0 +1,33 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.second {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin: 15px;
+}
+
+.first {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#one,
+#two,
+#three {
+    padding: 12px;
+}
