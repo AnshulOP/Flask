@@ -1,0 +1,34 @@
+<head>
+    <title>Login</title>
+    <!-- Link to an external CSS stylesheet for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/Login.css') }}">
+</head>
+<!-- Start the body of the document -->
+<body>
+    <!-- Add a heading to the page -->
+    <h2>Please enter your details</h2>
+    <!-- Create a main container with a form to allow users to submit their login details -->
+    <div class="main">
+        <form action="/valid" method="post">
+            <table>
+                <!-- Create a row for the email field -->
+                <tr>
+                    <td>Email : </td>
+                    <td><input type='email' name='email'></td>
+                </tr>
+                <!-- Create a row for the password field -->
+                <tr>
+                    <td>Password : </td>
+                    <td><input type='password' name='password'></td>
+                </tr>
+                <!-- Create a row for the submit button -->
+                <tr>
+                    <div class="container">
+                        <td><input type="submit" value="Submit" id="button_one"></td>
+                    </div>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
